@@ -24,12 +24,12 @@ A simple and responsive Expense Tracker built using React and React Router. This
 
 ## Project Structure
 
+```text
 Expense-Tracker/
 │
 ├── public/
 │
 ├── src/
-│   │
 │   ├── components/
 │   │   ├── ExpenseForm.jsx
 │   │   ├── ExpenseForm.css
@@ -50,16 +50,14 @@ Expense-Tracker/
 │   ├── App.jsx
 │   ├── App.css
 │   ├── main.jsx
-│   └── index.css
+│   ├── index.css
 │
 ├── README.md
 ├── index.html
 ├── package.json
 ├── package-lock.json
 ├── vite.config.js
-└── node_modules/
-
-
+```
 ## Usage
 
 1. Login using your name and email.
