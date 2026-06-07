@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import Home from "./Pages/Home";
@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 import "./App.css"
 
 function App() {
-  // const [expenses, setExpenses] = useState([]);
 
   const [expenses, setExpenses] = useState([]);
   const [username, setUsername] = useState(
@@ -18,11 +17,6 @@ function App() {
   const [email, setEmail] = useState(
   localStorage.getItem("email") || ""
 );
-//   const [expenses, setExpenses] = useState(() => {
-//   const savedExpenses = localStorage.getItem("expenses");
-
-//   return savedExpenses ? JSON.parse(savedExpenses) : [];
-// });
 
   const addExpense = (expense) => {
     setExpenses([...expenses, expense]);
@@ -52,7 +46,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Navbar username={username} setUsername={setUsername} />
     { !username ? (
        <Login setUsername={setUsername} setEmail={setEmail} />
@@ -75,7 +69,7 @@ function App() {
    
       </Routes>
      )}
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
