@@ -13,7 +13,7 @@ function Home({ expenses, username , deleteExpense }) {
     <>
     <div className="home">
       <div className="welcome-section">
-      <h1>Welcome back, {username}!!
+      <h1>Hello {username}!!
       </h1>
       <p>Here's how you spent today...</p>
       </div>

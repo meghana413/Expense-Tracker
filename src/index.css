@@ -13,6 +13,7 @@ html {
 body {
   overflow-x: hidden;
   width: 100%;
+  background-color: #8B9DC3;
 }
 
 img {
@@ -44,11 +45,10 @@ img {
   }
 
   
-  .expense-item,
-  .form-container {
+  .expense-item {
     width: 100%;
   }
-}
+
 
 .navbar {
   display: flex;
@@ -73,7 +73,6 @@ img {
   }
 
   .home,
-  .login-container,
   .form-container {
     width: 95%;
     margin: auto;
@@ -110,4 +109,18 @@ img {
     padding: 8px 12px;
     font-size: 0.9rem;
   }
+
+  .Login-Page {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
+
+.login-container {
+  width: 100%;
+  max-width: 300px;
+}
+}}

@@ -8,19 +8,12 @@
   max-width: 70%;
   margin:auto;
   transition: transform 0.2s ease;
-  /* border-radius: 15px; */
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .expense-item:hover {
   transform: translateY(-2px);
 }
-
-/* .expense-info {
-  display: flex;
-  gap: 5px;
-  text-align: center;
-} */
 
 .expense-item h3 {
   color: #333;
@@ -41,7 +34,12 @@
 
 .no-expenses {
   text-align: center;
-  color: #888;
+  color: #0e0e0e;
   font-size: 1.2rem;
   margin-top: 20px;
+}
+
+.expense-page{
+  color: black;
+  text-align: center;
 }

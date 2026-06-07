@@ -1,21 +1,22 @@
 .home{
    margin : 0;
    padding: 0;
-   background-color: rgb(22, 16, 18);
+   background-color: #8B9DC3;
    min-height: 100vh;
-   color: white;
+   color: #19008a;
 }
 .main-title {
-    color : white;
+    color : rgb(33, 32, 32);
 }
+/* #b7d7e8 */
 .add-btn {
   display: block;
   width: fit-content;
   margin: 15px auto;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: #2196f3;
-  color: white;
+  background-color: #19008a;
+  color: #ffff;
   border-radius: 5px;
 }
 
@@ -26,13 +27,13 @@
 .total {
   text-align: center;
   margin: 20px 0;
-  font-size: 2rem;
-  color: #4caf50;
+  font-size: 2.3rem;
+  color: #36486b;
   font-weight: bold;
 }
 .welcome-section {
   margin: 0 0 0 0;
-  background-color: rgb(52, 47, 47);
+  background-color: #36486b;
   padding: 10px;
   display : flex;
   flex-direction: column;
@@ -42,8 +43,8 @@
   padding: 15px;
   text-align: left;
   font-weight: bold;
-  font-size : 3rem;
-  color: white;
+  font-size : 2rem;
+  color: rgb(245, 237, 237);
 }
 .welcome-section p{
     color : #888;
@@ -55,7 +56,7 @@
 }
 .welcome-text {
   text-align: center;
-  color: rgb(241, 237, 237);
+  color: rgb(10, 10, 10);
   margin-bottom: 20px;
   
 }

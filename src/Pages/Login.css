@@ -3,7 +3,7 @@
   margin: 80px auto;
   padding: 30px;
 
-  background: #333;
+  background: #e7e4e4;
   border-radius: 12px;
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -15,7 +15,7 @@
 
 .login-title {
   text-align: center;
-  color: #ffff;
+  color: #1f3e5c;
 }
 
 .login-form {
@@ -29,14 +29,18 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
+  color: #080808;
 }
 
+.login-input:hover{
+  outline : 1px solid #1f3e5c;
+}
 .login-btn {
   padding: 12px;
   border: none;
   border-radius: 6px;
 
-  background-color: #2196f3;
+  background-color: #1f3e5c;
   color: white;
 
   font-size: 16px;
@@ -44,11 +48,11 @@
 }
 
 .login-btn:hover {
-  background-color: #1976d2;
+  background-color: #1963ac;
 }
 
 .login-subtitle {
   text-align: center;
-  color: #f9f5f5;
+  color: #1f476d;
   font-size: 14px;
 }
