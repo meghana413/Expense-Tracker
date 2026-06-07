@@ -42,7 +42,7 @@
   padding: 15px;
   text-align: left;
   font-weight: bold;
-  font-size : 3.3rem;
+  font-size : 3rem;
   color: white;
 }
 .welcome-section p{
@@ -57,4 +57,5 @@
   text-align: center;
   color: rgb(241, 237, 237);
   margin-bottom: 20px;
+  
 }
