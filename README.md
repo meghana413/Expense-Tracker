@@ -77,8 +77,4 @@ Expense-Tracker/
 
 ## Author
 
-Developed by [Your Name]
-
-## License
-
-This project is created for learning and educational purposes.
+Developed by Meghana Palavalasa
