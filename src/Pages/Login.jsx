@@ -15,7 +15,7 @@ function Login({ setUsername , setEmail }) {
     localStorage.setItem("email", email);
 
     setUsername(name);
-    setEmail(email);
+    setEmailOf(email);
   };
 
   return (
