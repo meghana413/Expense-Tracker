@@ -16,28 +16,32 @@ function App() {
     localStorage.getItem("email") || ""
   );
 
-  const [expenses, setExpenses] = useState(() => {
-    const savedEmail = localStorage.getItem("email");
+  const [expenses, setExpenses] = useState([]);
 
-    if (savedEmail) {
-      return (
-        JSON.parse(
-          localStorage.getItem(`expenses_${savedEmail}`)
-        ) || []
-      );
-    }
+useEffect(() => {
 
-    return [];
-  });
+  if (email) {
+    const savedExpenses =
+      JSON.parse(localStorage.getItem(`expenses_${email}`)) || [];
 
-  useEffect(() => {
-    if (email) {
-      localStorage.setItem(
-        `expenses_${email}`,
-        JSON.stringify(expenses)
-      );
-    }
-  }, [expenses, email]);
+    console.log("LOADED:", savedExpenses);
+
+    setExpenses(savedExpenses);
+  } else {
+    setExpenses([]);
+  }
+}, [email]);
+
+useEffect(() => {
+  
+
+  if (email) {
+    localStorage.setItem(
+      `expenses_${email}`,
+      JSON.stringify(expenses)
+    );
+  }
+}, [expenses, email]);
 
   const addExpense = (expense) => {
     setExpenses((prevExpenses) => [
