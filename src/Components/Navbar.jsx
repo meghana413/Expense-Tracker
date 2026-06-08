@@ -1,6 +1,6 @@
 import "./Navbar.css";
 
-function Navbar({ username,setEmail, setUsername }) {
+function Navbar({ username, setEmail, setUsername }) {
 
   const handleLogout = () => {
     localStorage.removeItem("username");
